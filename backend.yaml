@@ -6,7 +6,7 @@
     ansible.builtin.command: dnf module disable nodejs -y
 
   - name: enable nodejs 20
-  ansible.builtin.command: dnf module enable nodejs:20 -y
+    ansible.builtin.command: dnf module enable nodejs:20 -y
 
   - name: install nodejs
     ansible.builtin.command:
@@ -14,6 +14,6 @@
       state: present
 
   - name: Create a user expense
-  ansible.builtin.user:
+    ansible.builtin.user:
     name: expense
    # create_home: yes
