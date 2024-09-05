@@ -15,5 +15,5 @@
 
   - name: Create a user expense
     ansible.builtin.user:
-    name: expense
+      name: expense
    # create_home: yes
